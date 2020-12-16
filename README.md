@@ -30,6 +30,7 @@ To run the evaluations based on Creative Commons, you first have to download the
 Therefore, download or clone the
 [cc.licenserdf](https://github.com/creativecommons/cc.licenserdf)
 repository.
+For the ReCoDa article, a [cc.licenserdf copy](https://github.com/projekt-opal/cc.licenserdf) was used.
 Afterwards, the directory of the repository can be set by the system property ``cc.licenserdf``.
 Example commands to run the experiments are listed below.
 

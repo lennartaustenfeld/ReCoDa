@@ -7,8 +7,8 @@ package org.dice_research.opal.licenses;
  */
 public class License {
 
-	public boolean isShareAlike() {
-		return getAttributes().isShareAlike();
+	public boolean isAttribueEquality() {
+		return getAttributes().isAttribueEquality();
 	}
 
 	private Attributes attributes = new Attributes();

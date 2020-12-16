@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<name>OPAL licenses</name>
-	<groupId>org.dice-research.opal</groupId>
-	<artifactId>opal-licenses</artifactId>
+	<name>ReCoDa</name>
+	<groupId>org.dice_research.opal</groupId>
+	<artifactId>recoda</artifactId>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -55,22 +55,6 @@
 	</build>
 
 	<dependencies>
-
-		<!-- OPAL common -->
-
-		<!-- https://github.com/projekt-opal/common -->
-		<dependency>
-			<groupId>org.dice-research.opal</groupId>
-			<artifactId>common</artifactId>
-			<version>[1,2)</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-csv -->
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-csv</artifactId>
-			<version>1.8</version>
-		</dependency>
 
 		<!-- Jena -->
 

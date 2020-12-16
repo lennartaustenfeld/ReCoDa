@@ -59,8 +59,8 @@ public enum AttributeFactory {
 				newAttribute = createAttribute(attribute.getType(), attribute.getUri());
 			}
 
-			newAttribute.setIsTypePermissionOfDerivates(attribute.isTypePermissionOfDerivates());
-			newAttribute.setIsTypeRequirementShareAlike(attribute.isTypeRequirementShareAlike());
+			newAttribute.setTypePermissionOfDerivates(attribute.isTypePermissionOfDerivates());
+			newAttribute.setTypeAttribueEquality(attribute.isAttribueEquality());
 
 			return newAttribute;
 		}

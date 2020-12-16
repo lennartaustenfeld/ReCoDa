@@ -89,7 +89,7 @@ public class CcData {
 		System.out.println();
 
 		KnowledgeBase knowledgeBase = cc.createKnowledgeBase(rdfFiles);
-		System.out.println(knowledgeBase.getAttributes().toLines());
+		System.out.println(knowledgeBase.getSortedAttributes().toLines());
 		for (License license : knowledgeBase.getLicenses()) {
 			System.out.println(license);
 			System.out.println(Arrays.toString(license.getAttributes().getValuesArray()));
@@ -122,7 +122,7 @@ public class CcData {
 
 			// Special case: http://creativecommons.org/ns#DerivativeWorks (Permission)
 			if (permission.getUri().equals(DERIVATIVE_WORKS)) {
-				permission.setIsTypePermissionOfDerivates(true);
+				permission.setTypePermissionOfDerivates(true);
 			}
 
 			knowledgeBase.addAttribute(permission);
@@ -137,7 +137,7 @@ public class CcData {
 
 			// Special case: http://creativecommons.org/ns#ShareAlike (Requirement)
 			if (requirement.getUri().equals(SHARE_ALIKE)) {
-				requirement.setIsTypeRequirementShareAlike(true);
+				requirement.setTypeAttribueEquality(true);
 			}
 
 			knowledgeBase.addAttribute(requirement);
@@ -204,7 +204,7 @@ public class CcData {
 
 			// Add value true/false
 
-			for (Attribute attribute : knowledgeBase.getAttributes().getList()) {
+			for (Attribute attribute : knowledgeBase.getSortedAttributes().getList()) {
 
 				if (attribute instanceof Permission) {
 
@@ -213,7 +213,7 @@ public class CcData {
 
 					// Special case: http://creativecommons.org/ns#DerivativeWorks (Permission)
 					if (attribute.getUri().equals(DERIVATIVE_WORKS)) {
-						permission.setIsTypePermissionOfDerivates(true);
+						permission.setTypePermissionOfDerivates(true);
 					}
 
 					license.getAttributes().addAttribute(permission);
@@ -232,7 +232,7 @@ public class CcData {
 
 					// Special case: http://creativecommons.org/ns#ShareAlike (Requirement)
 					if (attribute.getUri().equals(SHARE_ALIKE)) {
-						requirement.setIsTypeRequirementShareAlike(true);
+						requirement.setTypeAttribueEquality(true);
 					}
 
 					license.getAttributes().addAttribute(requirement);

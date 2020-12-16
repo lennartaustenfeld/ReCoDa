@@ -9,7 +9,6 @@ import org.dice_research.opal.licenses.BackMapping;
 import org.dice_research.opal.licenses.Execution;
 import org.dice_research.opal.licenses.KnowledgeBase;
 import org.dice_research.opal.licenses.License;
-import org.dice_research.opal.licenses.cc.CcMatrix;
 import org.dice_research.opal.licenses.utils.ArrayUtil;
 import org.junit.Assert;
 import org.junit.Before;
@@ -17,6 +16,8 @@ import org.junit.Test;
 
 /**
  * Tests Creative Commons license compatibility.
+ * 
+ * @see ../package-info.java
  * 
  * @see https://wiki.creativecommons.org/index.php?title=Wiki/cc_license_compatibility&oldid=70058
  * 

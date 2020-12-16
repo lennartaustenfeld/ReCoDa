@@ -13,7 +13,6 @@ package org.dice_research.opal.licenses.utils;
 public abstract class Cfg {
 
 	public static final String KEY_CC_LICENSERDF = "cc.licenserdf";
-	public static final String KEY_RUN_EDP_LCM_TESTS = "run.edp.lcm.tests";
 
 	/**
 	 * Gets value for system property key.
@@ -35,15 +34,6 @@ public abstract class Cfg {
 	 */
 	public static final String getCcLicenseRdf() throws Exception {
 		return get(KEY_CC_LICENSERDF);
-	}
-
-	/**
-	 * Returns, if EDP LCM test should be executed.
-	 * 
-	 * @throws RuntimeException if system property key not found
-	 */
-	public static final String getRunEdpLcmTests() throws Exception {
-		return get(KEY_RUN_EDP_LCM_TESTS);
 	}
 
 }

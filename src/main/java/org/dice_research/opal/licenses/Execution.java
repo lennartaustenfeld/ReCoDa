@@ -40,9 +40,9 @@ public class Execution {
 
 		// Put results in attribute object
 		Attributes attributes = new Attributes();
-		for (int i = 0; i < knowledgeBase.getAttributes().getList().size(); i++) {
+		for (int i = 0; i < knowledgeBase.getSortedAttributes().getList().size(); i++) {
 			attributes.addAttribute(
-					AttributeFactory.get().createAttribute(knowledgeBase.getAttributes().getList().get(i), false)
+					AttributeFactory.get().createAttribute(knowledgeBase.getSortedAttributes().getList().get(i), false)
 							.setValueByInternal(result[i]));
 		}
 		return attributes;

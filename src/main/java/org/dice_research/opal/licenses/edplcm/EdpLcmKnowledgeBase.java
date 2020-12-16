@@ -25,7 +25,7 @@ import org.dice_research.opal.licenses.License;
  * 
  * Does not include attribute 'Sublicensing' as it contains a 'N.A.' value.
  * 
- * Usage: Use {@link #getAttributes()} or {@link #getUrisToLicenses()}.
+ * Usage: Use {@link #getSortedAttributes()} or {@link #getUrisToLicenses()}.
  * 
  * Based on "European Data Portal Licence Compatibility Matrix" and sheet
  * "Licence Descriptions".
@@ -60,7 +60,7 @@ public class EdpLcmKnowledgeBase extends KnowledgeBase {
 	public boolean skipCcPdm = true;
 
 	@Override
-	public Attributes getAttributes() {
+	public Attributes getSortedAttributes() {
 		if (!isLoaded) {
 			try {
 				load();
@@ -68,7 +68,7 @@ public class EdpLcmKnowledgeBase extends KnowledgeBase {
 				throw new RuntimeException(e);
 			}
 		}
-		return super.getAttributes();
+		return super.getSortedAttributes();
 	}
 
 	@Override
@@ -111,9 +111,9 @@ public class EdpLcmKnowledgeBase extends KnowledgeBase {
 					Attribute attribute = AttributeFactory.get().createAttribute(csvRecord.get(i),
 							attributeUris.get(i));
 					if (attributeUris.get(i).equals(ATTRIBUTE_ID_ALIKE)) {
-						attribute.setIsTypeRequirementShareAlike(true);
+						attribute.setTypeAttribueEquality(true);
 					} else if (attributeUris.get(i).equals(ATTRIBUTE_ID_DERIVATES)) {
-						attribute.setIsTypePermissionOfDerivates(true);
+						attribute.setTypePermissionOfDerivates(true);
 					}
 					addAttribute(attribute);
 				}
@@ -135,7 +135,7 @@ public class EdpLcmKnowledgeBase extends KnowledgeBase {
 					}
 
 					Attribute attribute = AttributeFactory.get().createAttribute(
-							super.getAttributes().getUriToAttributeMap().get(attributeUris.get(i)), false);
+							super.getSortedAttributes().getUriToAttributeMap().get(attributeUris.get(i)), false);
 
 					try {
 						addAttributeValue(attribute, csvRecord.get(i));

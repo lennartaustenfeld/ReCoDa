@@ -4,13 +4,14 @@ import java.io.IOException;
 
 import org.dice_research.opal.licenses.KnowledgeBase;
 import org.dice_research.opal.licenses.License;
-import org.dice_research.opal.licenses.cc.CcData;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Tests {@link CcData}.
+ * 
+ * @see ../package-info.java
  * 
  * @author Adrian Wilke
  */
@@ -43,12 +44,12 @@ public class CcDataTest {
 
 		for (License license : knowledgeBase.getLicenses()) {
 			Assert.assertEquals(license.toString(), license.getAttributes().getAttribute(CcData.SHARE_ALIKE).getValue(),
-					license.isShareAlike());
+					license.isAttribueEquality());
 		}
 
 		Assert.assertEquals(8, knowledgeBase.getLicenses().size());
 
-		Assert.assertEquals(7, knowledgeBase.getAttributes().getList().size());
+		Assert.assertEquals(7, knowledgeBase.getSortedAttributes().getList().size());
 
 		if (PRINT_KNOWLEDGEBASE) {
 			System.out.println(knowledgeBase.toLines());

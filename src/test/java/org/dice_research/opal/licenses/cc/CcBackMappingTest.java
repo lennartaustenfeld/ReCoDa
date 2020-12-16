@@ -9,13 +9,14 @@ import org.dice_research.opal.licenses.Attributes;
 import org.dice_research.opal.licenses.BackMapping;
 import org.dice_research.opal.licenses.KnowledgeBase;
 import org.dice_research.opal.licenses.License;
-import org.dice_research.opal.licenses.cc.CcMatrix;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Tests {@link BackMapping}.
+ * 
+ * @see ../package-info.java
  * 
  * @author Adrian Wilke
  */

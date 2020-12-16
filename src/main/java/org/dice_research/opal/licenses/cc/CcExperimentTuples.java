@@ -90,7 +90,7 @@ public class CcExperimentTuples {
 		license = knowledgeBase.getLicense(licenseUri);
 		System.out.println(ArrayUtil.intString(license.getAttributes().getValuesArray()) + " " + license);
 
-		System.out.println(Arrays.toString(knowledgeBase.getAttributes().getShortFormArray()));
+		System.out.println(Arrays.toString(knowledgeBase.getSortedAttributes().getShortFormArray()));
 		System.out.println(knowledgeBase.toLines());
 	}
 

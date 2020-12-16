@@ -12,15 +12,6 @@ import java.util.Set;
  */
 public class Attributes {
 
-	public boolean isShareAlike() {
-		for (Attribute attribute : getList()) {
-			if (attribute.isTypeRequirementShareAlike() && attribute.getValue()) {
-				return true;
-			}
-		}
-		return false;
-	}
-
 	/**
 	 * Insertion-ordered map: Attribute-URI to Attribute.
 	 */
@@ -98,6 +89,15 @@ public class Attributes {
 			array[counter++] = attribute.getValue();
 		}
 		return array;
+	}
+
+	public boolean isAttribueEquality() {
+		for (Attribute attribute : getList()) {
+			if (attribute.isAttribueEquality() && attribute.getValue()) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**

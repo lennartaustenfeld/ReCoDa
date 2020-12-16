@@ -28,7 +28,7 @@ public class EdpLcmKnowledgeBaseTest {
 
 	@Test
 	public void testAttributes() {
-		Attributes attributes = new EdpLcmKnowledgeBase().getAttributes();
+		Attributes attributes = new EdpLcmKnowledgeBase().getSortedAttributes();
 		checkAttributes(attributes, false);
 	}
 
@@ -44,9 +44,9 @@ public class EdpLcmKnowledgeBaseTest {
 		}
 
 		if (knowledgeBase.skipSublicensing) {
-			Assert.assertEquals(NUMBER_OF_ATTRIBUTES - 1, knowledgeBase.getAttributes().getUriToAttributeMap().size());
+			Assert.assertEquals(NUMBER_OF_ATTRIBUTES - 1, knowledgeBase.getSortedAttributes().getUriToAttributeMap().size());
 		} else {
-			Assert.assertEquals(NUMBER_OF_ATTRIBUTES, knowledgeBase.getAttributes().getUriToAttributeMap().size());
+			Assert.assertEquals(NUMBER_OF_ATTRIBUTES, knowledgeBase.getSortedAttributes().getUriToAttributeMap().size());
 		}
 
 		for (License license : licenses) {

@@ -6,17 +6,20 @@
  * </p>
  * 
  * <p>
- * (2) CC tests: These tests require data of an additional repository. The
- * directory to use can be set by the system property 'cc.licenserdf' (VM
- * arguments). For instance:
+ * (2) CC tests: These tests require data of an additional repository. If the
+ * data can not be found, the tests will be skipped. The directory to use can be
+ * set by the system property 'cc.licenserdf' (VM arguments). For instance:
  * <code>-Dcc.licenserdf=../cc.licenserdf/cc/licenserdf/licenses/</code>
+ * 
+ * Repository used for development:
+ * https://github.com/projekt-opal/cc.licenserdf
+ * 
+ * Official Creative Commons repository:
+ * https://github.com/creativecommons/cc.licenserdf
  * </p>
  * 
  * <p>
- * (3) EDP evaluation tests: As the experiments do not create a perfect
- * F1-Score, these tests are disabled by default. To enable the tests, set the
- * system property 'run.edp.lcm.tests' to true (VM arguments). For instance:
- * <code>-Drun.edp.lcm.tests=true</code>
+ * (3) EDP evaluation tests.
  * </p>
  * 
  * <p>

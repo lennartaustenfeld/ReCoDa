@@ -42,7 +42,7 @@ public class BackMapping {
 
 		// If a derivates-allowed permission is not set for an input license -> no
 		// result
-		for (Attribute attribute : knowledgeBase.getAttributes().getList()) {
+		for (Attribute attribute : knowledgeBase.getSortedAttributes().getList()) {
 			if (attribute.isTypePermissionOfDerivates()) {
 				// If there is one license not allowing derivates -> no result
 				for (License license : inputLicenses) {
@@ -59,7 +59,7 @@ public class BackMapping {
 		// Remove incompatible share-alike restrictions
 		for (License shareAlikeInputLicense : inputLicenses) {
 			for (License license : knowledgeBase.getLicenses()) {
-				if (shareAlikeInputLicense.isShareAlike()) {
+				if (shareAlikeInputLicense.isAttribueEquality()) {
 					List<License> licenseList = new LinkedList<>();
 					licenseList.add(license);
 					if (removeNotCompatibleShareAlike(shareAlikeInputLicense, licenseList, false).isEmpty()) {
@@ -136,7 +136,7 @@ public class BackMapping {
 
 				// Ignore meta attributes except of share-alike
 				if (!includeMetaAttributes && settingAttributes.get(i).isMetaAttribute()
-						&& !settingAttributes.get(i).isTypeRequirementShareAlike()) {
+						&& !settingAttributes.get(i).isAttribueEquality()) {
 					continue valueLoop;
 				}
 

@@ -31,7 +31,7 @@ public class KnowledgeBase {
 	/**
 	 * Sorts the attributes in knowledge base if not sorted. Returns them.
 	 */
-	public Attributes getAttributes() {
+	public Attributes getSortedAttributes() {
 		if (!attributesSorted) {
 			attributes.sort();
 		}
@@ -56,7 +56,7 @@ public class KnowledgeBase {
 
 	public String toLines() {
 		StringBuilder stringBuilder = new StringBuilder();
-		for (Attribute attribute : getAttributes().getList()) {
+		for (Attribute attribute : getSortedAttributes().getList()) {
 			stringBuilder.append(attribute);
 			stringBuilder.append(System.lineSeparator());
 		}
