@@ -3,7 +3,7 @@
 The related article _Relicensing Combined Datasets_ was accepted at the Resource Track of the [15th IEEE International Conference on Semantic Computing (ICSC2021)](https://www.ieee-icsc.org/).
 It will take place on January 27-29, 2021.
 
-# Repository
+## Repository
 
 This repository contains code to generate a list of compatible licenses based on multiple input licenses to be checked.
 The following main steps are executed:
@@ -76,8 +76,8 @@ This will run the additional [EdpLcmEvaluationTest](src/test/java/org/dice_resea
 
 [Data Science Group (DICE)](https://dice-research.org/) at [Paderborn University](https://www.uni-paderborn.de/)
 
-This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) in the project Open Data Portal Germany (OPAL),
-funding code 19F2028A,
-[dice-research.org/OPAL](https://dice-research.org/OPAL),
-[projekt-opal.de](http://projekt-opal.de/).
+This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) within the
+project [OPAL](https://dice-research.org/OPAL) under the grant no. 19F2028A and by the EU
+H2020 Marie Skłodowska-Curie project [KnowGraphs](https://knowgraphs.eu/) under
+the grant agreement no 860801.
 
