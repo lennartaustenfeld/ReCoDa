@@ -5,6 +5,7 @@ import org.dice_research.opal.licenses.cc.CcDataTest;
 import org.dice_research.opal.licenses.cc.CcEvaluationSingleTest;
 import org.dice_research.opal.licenses.cc.CcEvaluationTest;
 import org.dice_research.opal.licenses.cc.ExecutionTest;
+import org.dice_research.opal.licenses.cc.OdrlTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
@@ -21,6 +22,8 @@ import org.junit.runners.Suite.SuiteClasses;
 		CcEvaluationTest.class,
 
 		ExecutionTest.class,
+
+		OdrlTest.class,
 
 })
 

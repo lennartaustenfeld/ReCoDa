@@ -136,7 +136,7 @@ public class BackMapping {
 
 				// Ignore meta attributes except of share-alike
 				if (!includeMetaAttributes && settingAttributes.get(i).isMetaAttribute()
-						&& !settingAttributes.get(i).isAttribueEquality()) {
+						&& !settingAttributes.get(i).isTypeAttribueEquality()) {
 					continue valueLoop;
 				}
 

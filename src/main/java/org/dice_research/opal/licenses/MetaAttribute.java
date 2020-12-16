@@ -20,7 +20,7 @@ public abstract class MetaAttribute {
 		return isTypePermissionOfDerivates;
 	}
 
-	public boolean isAttribueEquality() {
+	public boolean isTypeAttribueEquality() {
 		return isTypeAttribueEquality;
 	}
 

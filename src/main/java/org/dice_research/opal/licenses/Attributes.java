@@ -93,7 +93,7 @@ public class Attributes {
 
 	public boolean isAttribueEquality() {
 		for (Attribute attribute : getList()) {
-			if (attribute.isAttribueEquality() && attribute.getValue()) {
+			if (attribute.isTypeAttribueEquality() && attribute.getValue()) {
 				return true;
 			}
 		}

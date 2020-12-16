@@ -60,7 +60,7 @@ public enum AttributeFactory {
 			}
 
 			newAttribute.setTypePermissionOfDerivates(attribute.isTypePermissionOfDerivates());
-			newAttribute.setTypeAttribueEquality(attribute.isAttribueEquality());
+			newAttribute.setTypeAttribueEquality(attribute.isTypeAttribueEquality());
 
 			return newAttribute;
 		}
