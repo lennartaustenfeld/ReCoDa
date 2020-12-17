@@ -29,9 +29,9 @@ import org.dice_research.opal.licenses.Requirement;
 /**
  * ODRL.
  * 
- * ReCoDa MetaAttributes (attribute types) are expressed as Actions.
- * 
- * TODO: Check best way to store MetaAttributes.
+ * ReCoDa MetaAttributes (attribute types) are expressed as Actions. By default,
+ * these are not included in the import and export. That can be changed in the
+ * constructor {@link #Odrl(boolean)}.
  * 
  * @see https://www.w3.org/TR/odrl-vocab/
  * @see https://www.w3.org/TR/odrl-model/
@@ -55,6 +55,26 @@ public class Odrl {
 	public static final Resource R_DERIVATIVE_WORKS = ResourceFactory.createResource(CC + "DerivativeWorks");
 	public static final Resource R_SHARE_ALIKE = ResourceFactory.createResource(CC + "ShareAlike");
 
+	private boolean includeMetaAttributes;
+
+	/**
+	 * Constructor.
+	 * 
+	 * Will not include meta attributes.
+	 */
+	public Odrl() {
+		this.includeMetaAttributes = false;
+	}
+
+	/**
+	 * Constructor.
+	 * 
+	 * @param includeMetaAttributes include meta attributes to import/export.
+	 */
+	public Odrl(boolean includeMetaAttributes) {
+		this.includeMetaAttributes = includeMetaAttributes;
+	}
+
 	public void export(KnowledgeBase kb, File file, Lang lang) {
 		try {
 			FileOutputStream fos = new FileOutputStream(file);
@@ -68,6 +88,8 @@ public class Odrl {
 	public Model export(KnowledgeBase kb) {
 		Model model = ModelFactory.createDefaultModel();
 		for (License license : kb.getLicenses()) {
+
+			// Add license
 			Resource rLicense = ResourceFactory.createResource(license.getUri());
 			model.add(rLicense, RDF.type, R_POLICY);
 			if (license.getName() != null && !license.getName().isEmpty()) {
@@ -75,6 +97,12 @@ public class Odrl {
 			}
 
 			for (Attribute attribute : license.getAttributes().getUriToAttributeMap().values()) {
+
+				// Only add existing/true attributes as triples
+				if (!attribute.getValue()) {
+					continue;
+				}
+
 				Resource rAttribute = ResourceFactory.createResource(attribute.getUri());
 
 				if (attribute instanceof Permission) {
@@ -90,11 +118,14 @@ public class Odrl {
 					throw new RuntimeException("Unknown attibute type");
 				}
 
-				if (attribute.isTypeAttribueEquality()) {
-					model.add(rAttribute, P_ACTION, R_SHARE_ALIKE);
-				}
-				if (attribute.isTypePermissionOfDerivates()) {
-					model.add(rAttribute, P_ACTION, R_DERIVATIVE_WORKS);
+				// Optional: Add meta attributes
+				if (includeMetaAttributes) {
+					if (attribute.isTypeAttribueEquality()) {
+						model.add(rAttribute, P_ACTION, R_SHARE_ALIKE);
+					}
+					if (attribute.isTypePermissionOfDerivates()) {
+						model.add(rAttribute, P_ACTION, R_DERIVATIVE_WORKS);
+					}
 				}
 			}
 		}
@@ -107,8 +138,57 @@ public class Odrl {
 
 	public KnowledgeBase importModel(Model model) {
 		KnowledgeBase kb = new KnowledgeBase();
+		ResIterator policyIt;
+		StmtIterator ruleIt;
 
-		ResIterator policyIt = model.listSubjectsWithProperty(RDF.type, R_POLICY);
+		// First iteration: Collect attributes from all licenses
+		policyIt = model.listSubjectsWithProperty(RDF.type, R_POLICY);
+		while (policyIt.hasNext()) {
+			Resource rPolicy = policyIt.next();
+
+			ruleIt = rPolicy.listProperties(P_PERMISSION);
+			while (ruleIt.hasNext()) {
+				RDFNode nRule = ruleIt.next().getObject();
+				if (nRule.isURIResource()) {
+					Resource rRule = nRule.asResource();
+					Attribute attribute = AttributeFactory.get().createAttribute(Permission.TYPE, rRule.getURI());
+					if (!kb.getSortedAttributes().getUris().contains(attribute.getUri())) {
+						addMetaAttribute(rRule, attribute);
+						kb.getSortedAttributes().addAttribute(attribute);
+					}
+				}
+			}
+
+			ruleIt = rPolicy.listProperties(P_PROHIBITION);
+			while (ruleIt.hasNext()) {
+				RDFNode nRule = ruleIt.next().getObject();
+				if (nRule.isURIResource()) {
+					Resource rRule = nRule.asResource();
+					Attribute attribute = AttributeFactory.get().createAttribute(Prohibition.TYPE, rRule.getURI());
+					if (!kb.getSortedAttributes().getUris().contains(attribute.getUri())) {
+						addMetaAttribute(rRule, attribute);
+						kb.getSortedAttributes().addAttribute(attribute);
+					}
+				}
+			}
+
+			ruleIt = rPolicy.listProperties(P_OBLIGATION);
+			while (ruleIt.hasNext()) {
+				RDFNode nRule = ruleIt.next().getObject();
+				if (nRule.isURIResource()) {
+					Resource rRule = nRule.asResource();
+					Attribute attribute = AttributeFactory.get().createAttribute(Requirement.TYPE, rRule.getURI());
+					if (!kb.getSortedAttributes().getUris().contains(attribute.getUri())) {
+						addMetaAttribute(rRule, attribute);
+						kb.getSortedAttributes().addAttribute(attribute);
+					}
+				}
+			}
+
+		}
+
+		// Second iteration: Add attributes contained in triples
+		policyIt = model.listSubjectsWithProperty(RDF.type, R_POLICY);
 		while (policyIt.hasNext()) {
 			Resource rPolicy = policyIt.next();
 			License license = new License();
@@ -118,21 +198,27 @@ public class Odrl {
 				license.setName(stmt.getObject().asLiteral().getString());
 			}
 
+			// Add attributes to license
 			Attributes attributes = new Attributes();
 			addAttributes(rPolicy, P_PERMISSION, Permission.TYPE, attributes);
 			addAttributes(rPolicy, P_PROHIBITION, Prohibition.TYPE, attributes);
 			addAttributes(rPolicy, P_OBLIGATION, Requirement.TYPE, attributes);
 			license.setAttributes(attributes);
 
+			// Add license with attributes
 			kb.addLicense(license);
+		}
 
-			for (Attribute attribute : attributes.getList()) {
-				if (!kb.getSortedAttributes().getUris().contains(attribute.getUri())) {
-					kb.getSortedAttributes().addAttribute(attribute);
+		// Third iteration: Add attributes not contained in triples
+		for (License license : kb.getLicenses()) {
+			for (Attribute attribute : kb.getSortedAttributes().getList()) {
+				if (!license.getAttributes().getUris().contains(attribute.getUri())) {
+					license.getAttributes()
+							.addAttribute(AttributeFactory.get().createAttribute(attribute, false).setValue(false));
 				}
 			}
-
 		}
+
 		return kb;
 	}
 
@@ -143,23 +229,45 @@ public class Odrl {
 			RDFNode nRule = ruleIt.next().getObject();
 			if (nRule.isURIResource()) {
 				Resource rRule = nRule.asResource();
-				Attribute attribute = AttributeFactory.get().createAttribute(attributeType, rRule.getURI());
+				Attribute attribute = AttributeFactory.get().createAttribute(attributeType, rRule.getURI(), true);
 
-				Statement stmt = rRule.getProperty(P_ACTION);
-				if (stmt != null) {
-					RDFNode nAction = stmt.getObject();
-					if (nAction.isURIResource()) {
-						String actionUri = nAction.asResource().getURI();
-						if (actionUri.equals(R_SHARE_ALIKE.getURI())) {
-							attribute.setTypeAttribueEquality(true);
-						} else if (actionUri.equals(R_DERIVATIVE_WORKS.getURI())) {
-							attribute.setTypePermissionOfDerivates(true);
+				// Optional: Add meta attributes
+				if (includeMetaAttributes) {
+					Statement stmt = rRule.getProperty(P_ACTION);
+					if (stmt != null) {
+						RDFNode nAction = stmt.getObject();
+						if (nAction.isURIResource()) {
+							String actionUri = nAction.asResource().getURI();
+							if (actionUri.equals(R_SHARE_ALIKE.getURI())) {
+								attribute.setTypeAttribueEquality(true);
+							} else if (actionUri.equals(R_DERIVATIVE_WORKS.getURI())) {
+								attribute.setTypePermissionOfDerivates(true);
+							}
 						}
 					}
 				}
+
 				attributes.addAttribute(attribute);
 			}
 		}
 		return attributes;
+	}
+
+	private void addMetaAttribute(Resource rRule, Attribute attribute) {
+		// Optional: Add meta attributes
+		if (includeMetaAttributes) {
+			Statement stmt = rRule.getProperty(P_ACTION);
+			if (stmt != null) {
+				RDFNode nAction = stmt.getObject();
+				if (nAction.isURIResource()) {
+					String actionUri = nAction.asResource().getURI();
+					if (actionUri.equals(R_SHARE_ALIKE.getURI())) {
+						attribute.setTypeAttribueEquality(true);
+					} else if (actionUri.equals(R_DERIVATIVE_WORKS.getURI())) {
+						attribute.setTypePermissionOfDerivates(true);
+					}
+				}
+			}
+		}
 	}
 }

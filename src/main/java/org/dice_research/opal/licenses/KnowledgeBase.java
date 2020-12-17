@@ -1,6 +1,8 @@
 package org.dice_research.opal.licenses;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Set;
@@ -60,7 +62,15 @@ public class KnowledgeBase {
 			stringBuilder.append(attribute);
 			stringBuilder.append(System.lineSeparator());
 		}
-		for (License license : getLicenses()) {
+
+		List<License> licenses = getLicenses();
+		Collections.sort(licenses, new Comparator<License>() {
+			@Override
+			public int compare(License o1, License o2) {
+				return o1.getUri().compareTo(o2.getUri());
+			}
+		});
+		for (License license : licenses) {
 			stringBuilder.append(ArrayUtil.intString(license.getAttributes().getValuesArray()));
 			stringBuilder.append(" ");
 			stringBuilder.append(ArrayUtil.intString(license.getAttributes().getInternalValuesArray()));

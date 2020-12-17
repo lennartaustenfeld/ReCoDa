@@ -1,8 +1,13 @@
 package org.dice_research.opal.licenses.cc;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.HashSet;
+import java.util.Map.Entry;
 import java.util.Set;
 
+import org.apache.jena.riot.Lang;
+import org.dice_research.opal.licenses.Attribute;
 import org.dice_research.opal.licenses.KnowledgeBase;
 import org.dice_research.opal.licenses.License;
 import org.dice_research.opal.licenses.utils.Odrl;
@@ -23,13 +28,7 @@ public class OdrlTest {
 	@Before
 	public void setUp() throws Exception {
 		kbOriginal = CcTestUtils.getKnowledgeBase(CcTestUtils.getCcData());
-		kbImported = new Odrl().importModel(new Odrl().export(kbOriginal));
-	}
-
-	@Test
-	public void testAttributesSize() {
-		Assert.assertEquals("Same number of attributes", kbOriginal.getSortedAttributes().getList().size(),
-				kbImported.getSortedAttributes().getList().size());
+		kbImported = new Odrl(true).importModel(new Odrl(true).export(kbOriginal));
 	}
 
 	@Test
@@ -54,9 +53,72 @@ public class OdrlTest {
 		Assert.assertTrue("Same license names", namesImported.containsAll(namesOriginal));
 	}
 
-	// TODO license attribute values (probably not stored correctly at current
-	// state)
+	@Test
+	public void testAttributesSize() {
+		Assert.assertEquals("Same number of attributes", kbOriginal.getSortedAttributes().getList().size(),
+				kbImported.getSortedAttributes().getList().size());
+	}
 
-	// TODO license attribute types (including 3 default types and meta attributes)
+	@Test
+	public void testAttributesValues() {
+		for (License licOriginal : kbOriginal.getLicenses()) {
+			License licImported = kbImported.getLicense(licOriginal.getUri());
+			Assert.assertNotNull("License imported" + licImported);
+
+			for (Entry<String, Attribute> originalAttributeEntry : licOriginal.getAttributes().getUriToAttributeMap()
+					.entrySet()) {
+				String originalAttributeUri = originalAttributeEntry.getKey();
+				Attribute originalAttribute = originalAttributeEntry.getValue();
+				Attribute importedAttribute = licImported.getAttributes().getAttribute(originalAttributeUri);
+				Assert.assertNotNull("Attribute available " + licImported.getUri() + " " + originalAttributeUri,
+						importedAttribute);
+				Assert.assertEquals("Same attribute values", originalAttribute.getValue(),
+						importedAttribute.getValue());
+			}
+
+		}
+	}
+
+	@Test
+	public void testMetaAttributes() {
+		for (Attribute attribute : kbOriginal.getSortedAttributes().getList()) {
+			boolean original = attribute.isTypePermissionOfDerivates();
+			boolean imported = kbImported.getSortedAttributes().getAttribute(attribute.getUri())
+					.isTypePermissionOfDerivates();
+			Assert.assertEquals("TypePermissionOfDerivates", original, imported);
+
+			original = attribute.isMetaAttribute();
+			imported = kbImported.getSortedAttributes().getAttribute(attribute.getUri()).isMetaAttribute();
+			Assert.assertEquals("isMetaAttribute", original, imported);
+
+			original = attribute.isTypeAttribueEquality();
+			imported = kbImported.getSortedAttributes().getAttribute(attribute.getUri()).isTypeAttribueEquality();
+			Assert.assertEquals("TypeAttribueEquality", original, imported);
+		}
+	}
+
+	@Test
+	public void testWriting() {
+		File file = null;
+		try {
+			file = File.createTempFile(getClass().getName(), ".ttl");
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+		file.deleteOnExit();
+
+		new Odrl(true).export(kbOriginal, file, Lang.TURTLE);
+		KnowledgeBase kbFileImport = new Odrl(true).importFile(file, Lang.TURTLE);
+
+		Assert.assertEquals(kbOriginal.getLicenses().size(), kbFileImport.getLicenses().size());
+		Assert.assertEquals(kbOriginal.getSortedAttributes().getList().size(),
+				kbFileImport.getSortedAttributes().getList().size());
+
+		System.out.println(getClass().getName());
+		System.out.println();
+		System.out.println(kbOriginal.toLines());
+		System.out.println(kbFileImport.toLines());
+		// TODO: KB licenses do not contain the same attributes
+	}
 
 }
