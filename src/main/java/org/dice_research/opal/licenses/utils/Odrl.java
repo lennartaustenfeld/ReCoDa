@@ -35,6 +35,7 @@ import org.dice_research.opal.licenses.Requirement;
  * 
  * @see https://www.w3.org/TR/odrl-vocab/
  * @see https://www.w3.org/TR/odrl-model/
+ * @see https://www.w3.org/ns/odrl/2/ODRL21 (examples)
  * @see https://creativecommons.org/ns
  *
  * @author Adrian Wilke
@@ -76,15 +77,23 @@ public class Odrl {
 	}
 
 	public void export(KnowledgeBase kb, File file, Lang lang) {
+		Model model = this.export(kb);
+
+		if (lang.equals(Lang.TURTLE)) {
+			model.setNsPrefix("cc", CC);
+			model.setNsPrefix("odrl", ODRL2);
+		}
+
 		try {
 			FileOutputStream fos = new FileOutputStream(file);
-			RDFDataMgr.write(fos, this.export(kb), lang);
+			RDFDataMgr.write(fos, model, lang);
 			fos.close();
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
 	}
 
+	// TODO: use blank nodes https://www.w3.org/ns/odrl/2/ODRL21
 	public Model export(KnowledgeBase kb) {
 		Model model = ModelFactory.createDefaultModel();
 		for (License license : kb.getLicenses()) {
@@ -198,12 +207,17 @@ public class Odrl {
 				license.setName(stmt.getObject().asLiteral().getString());
 			}
 
-			// Add attributes to license
+			// Add all attributes
 			Attributes attributes = new Attributes();
-			addAttributes(rPolicy, P_PERMISSION, Permission.TYPE, attributes);
-			addAttributes(rPolicy, P_PROHIBITION, Prohibition.TYPE, attributes);
-			addAttributes(rPolicy, P_OBLIGATION, Requirement.TYPE, attributes);
+			for (Attribute attribute : kb.getSortedAttributes().getList()) {
+				attributes.addAttribute(AttributeFactory.get().createAttribute(attribute, false).setValue(false));
+			}
 			license.setAttributes(attributes);
+
+			// Update attribute values
+			updateAttributes(rPolicy, P_PERMISSION, attributes);
+			updateAttributes(rPolicy, P_PROHIBITION, attributes);
+			updateAttributes(rPolicy, P_OBLIGATION, attributes);
 
 			// Add license with attributes
 			kb.addLicense(license);
@@ -222,35 +236,16 @@ public class Odrl {
 		return kb;
 	}
 
-	private Attributes addAttributes(Resource rPolicy, Property pRule, String attributeType, Attributes attributes) {
+	private void updateAttributes(Resource rPolicy, Property pRule, Attributes attributes) {
 
 		StmtIterator ruleIt = rPolicy.listProperties(pRule);
 		while (ruleIt.hasNext()) {
 			RDFNode nRule = ruleIt.next().getObject();
 			if (nRule.isURIResource()) {
 				Resource rRule = nRule.asResource();
-				Attribute attribute = AttributeFactory.get().createAttribute(attributeType, rRule.getURI(), true);
-
-				// Optional: Add meta attributes
-				if (includeMetaAttributes) {
-					Statement stmt = rRule.getProperty(P_ACTION);
-					if (stmt != null) {
-						RDFNode nAction = stmt.getObject();
-						if (nAction.isURIResource()) {
-							String actionUri = nAction.asResource().getURI();
-							if (actionUri.equals(R_SHARE_ALIKE.getURI())) {
-								attribute.setTypeAttribueEquality(true);
-							} else if (actionUri.equals(R_DERIVATIVE_WORKS.getURI())) {
-								attribute.setTypePermissionOfDerivates(true);
-							}
-						}
-					}
-				}
-
-				attributes.addAttribute(attribute);
+				attributes.getAttribute(rRule.getURI()).setValue(true);
 			}
 		}
-		return attributes;
 	}
 
 	private void addMetaAttribute(Resource rRule, Attribute attribute) {

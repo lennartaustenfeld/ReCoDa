@@ -106,6 +106,7 @@ public class OdrlTest {
 			throw new RuntimeException(e);
 		}
 		file.deleteOnExit();
+		System.out.println(file.getAbsolutePath());
 
 		new Odrl(true).export(kbOriginal, file, Lang.TURTLE);
 		KnowledgeBase kbFileImport = new Odrl(true).importFile(file, Lang.TURTLE);
@@ -114,11 +115,13 @@ public class OdrlTest {
 		Assert.assertEquals(kbOriginal.getSortedAttributes().getList().size(),
 				kbFileImport.getSortedAttributes().getList().size());
 
-		System.out.println(getClass().getName());
-		System.out.println();
-		System.out.println(kbOriginal.toLines());
-		System.out.println(kbFileImport.toLines());
-		// TODO: KB licenses do not contain the same attributes
+		// Human test
+		if (Boolean.FALSE) {
+			System.out.println(getClass().getName());
+			System.out.println();
+			System.out.println(kbOriginal.toLines());
+			System.out.println(kbFileImport.toLines());
+		}
 	}
 
 }
