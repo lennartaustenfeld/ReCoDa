@@ -106,7 +106,6 @@ public class OdrlTest {
 			throw new RuntimeException(e);
 		}
 		file.deleteOnExit();
-		System.out.println(file.getAbsolutePath());
 
 		new Odrl(true).export(kbOriginal, file, Lang.TURTLE);
 		KnowledgeBase kbFileImport = new Odrl(true).importFile(file, Lang.TURTLE);

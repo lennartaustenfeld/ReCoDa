@@ -33,6 +33,12 @@ import org.dice_research.opal.licenses.Requirement;
  * these are not included in the import and export. That can be changed in the
  * constructor {@link #Odrl(boolean)}.
  * 
+ * This implementation does not use profiles and blank nodes, like specified in
+ * ODRL. It is recommeded to use another format to import/export ReCoDa data.
+ * 
+ * https://www.w3.org/2012/09/odrl/archive/odrl.net/Profiles/CC/SPEC.html
+ * https://www.w3.org/community/odrl/
+ * 
  * @see https://www.w3.org/TR/odrl-vocab/
  * @see https://www.w3.org/TR/odrl-model/
  * @see https://www.w3.org/ns/odrl/2/ODRL21 (examples)
@@ -93,7 +99,6 @@ public class Odrl {
 		}
 	}
 
-	// TODO: use blank nodes https://www.w3.org/ns/odrl/2/ODRL21
 	public Model export(KnowledgeBase kb) {
 		Model model = ModelFactory.createDefaultModel();
 		for (License license : kb.getLicenses()) {
@@ -115,6 +120,7 @@ public class Odrl {
 				Resource rAttribute = ResourceFactory.createResource(attribute.getUri());
 
 				if (attribute instanceof Permission) {
+
 					model.add(rAttribute, RDF.type, R_RULE_PERMISSION);
 					model.add(rLicense, P_PERMISSION, rAttribute);
 				} else if (attribute instanceof Prohibition) {
