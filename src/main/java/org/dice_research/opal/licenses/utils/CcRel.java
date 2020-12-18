@@ -16,8 +16,8 @@ import org.apache.jena.rdf.model.Statement;
 import org.apache.jena.rdf.model.StmtIterator;
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
+import org.apache.jena.vocabulary.DCTerms;
 import org.apache.jena.vocabulary.RDF;
-import org.apache.jena.vocabulary.RDFS;
 import org.dice_research.opal.licenses.Attribute;
 import org.dice_research.opal.licenses.AttributeFactory;
 import org.dice_research.opal.licenses.Attributes;
@@ -42,6 +42,7 @@ public class CcRel {
 	public static final Property P_REQUIRES = ResourceFactory.createProperty(CCREL + "requires");
 	public static final Property P_PERMITS = ResourceFactory.createProperty(CCREL + "permits");
 	public static final Property P_PROHIBITS = ResourceFactory.createProperty(CCREL + "prohibits");
+	public static final Property P_TITLE = DCTerms.title;
 
 	private Collection<String> attribueEqualityUris;
 	private Collection<String> permissionOfDerivatesUris;
@@ -75,7 +76,7 @@ public class CcRel {
 			Resource rLicense = ResourceFactory.createResource(license.getUri());
 			model.add(rLicense, RDF.type, R_LICENSE);
 			if (license.getName() != null && !license.getName().isEmpty()) {
-				model.add(rLicense, RDFS.label, ResourceFactory.createPlainLiteral(license.getName()));
+				model.add(rLicense, P_TITLE, ResourceFactory.createPlainLiteral(license.getName()));
 			}
 
 			for (Attribute attribute : license.getAttributes().getUriToAttributeMap().values()) {
@@ -162,7 +163,7 @@ public class CcRel {
 			Resource rPolicy = policyIt.next();
 			License license = new License();
 			license.setUri(rPolicy.getURI());
-			Statement stmt = rPolicy.getProperty(RDFS.label);
+			Statement stmt = rPolicy.getProperty(P_TITLE);
 			if (stmt != null) {
 				license.setName(stmt.getObject().asLiteral().getString());
 			}
