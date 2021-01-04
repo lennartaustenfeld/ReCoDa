@@ -1,5 +1,9 @@
 # Changelog
 
+**Version 1.0.1**
+
+- Import/Export of Knowledge Bases using the Creative Commons Rights Expression Language
+
 **Version 1.0.0**
 
 - Experiment: Creative Commons License Compatibility Chart (8 licenses)
