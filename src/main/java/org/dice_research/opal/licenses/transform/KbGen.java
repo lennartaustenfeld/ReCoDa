@@ -2,13 +2,12 @@ package org.dice_research.opal.licenses.transform;
 
 import java.io.File;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import org.dice_research.opal.licenses.KnowledgeBase;
+import org.dice_research.opal.licenses.KnowledgeBases;
 import org.dice_research.opal.licenses.utils.CcRel;
 
 /**
@@ -18,17 +17,6 @@ import org.dice_research.opal.licenses.utils.CcRel;
  * @author Adrian Wilke
  */
 public abstract class KbGen {
-
-	public static final File DIRECTORY_RESOURCES = new File("src/main/resources");
-
-	/**
-	 * Creates new set containing the given string.
-	 */
-	public static Set<String> stringToSet(String string) {
-		Set<String> set = new HashSet<>();
-		set.add(string);
-		return set;
-	}
 
 	/**
 	 * Exports a {@link KnowledgeBase} in turtle format using the {@link CcRel}
@@ -50,7 +38,8 @@ public abstract class KbGen {
 			commentLines.add(getPermissionOfDerivatesUris().toString());
 		}
 
-		File file = new File(DIRECTORY_RESOURCES, getTitle() + ".ttl");
+		KnowledgeBases.KB_DIRECTORY.mkdirs();
+		File file = new File(KnowledgeBases.KB_DIRECTORY, getTitle() + KnowledgeBases.KB_FILE_SUFFIX);
 		new CcRel(getAttribueEqualityUris(), getPermissionOfDerivatesUris()).exportTurtle(getKnowledgeBase(), file,
 				getPrefixes(), commentLines);
 		return file;

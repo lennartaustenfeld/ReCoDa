@@ -7,8 +7,10 @@ import java.util.List;
 import java.util.Map;
 
 import org.dice_research.opal.licenses.KnowledgeBase;
+import org.dice_research.opal.licenses.KnowledgeBases;
 import org.dice_research.opal.licenses.cc.CcData;
 import org.dice_research.opal.licenses.utils.Cfg;
+import org.dice_research.opal.licenses.utils.CollectionUtil;
 
 /**
  * Configuration: Set CC.LicenseRDF directory using the system property
@@ -17,26 +19,26 @@ import org.dice_research.opal.licenses.utils.Cfg;
  *
  * @author Adrian Wilke
  */
-public class KbGenCcMatrix extends KbGen {
+public class KbGenCcChart extends KbGen {
 
 	public static void main(String[] args) throws Exception {
-		File file = new KbGenCcMatrix().export();
+		File file = new KbGenCcChart().export();
 		System.out.println("Exported: " + file.getAbsolutePath());
 	}
 
 	@Override
 	public Collection<String> getAttribueEqualityUris() {
-		return stringToSet(CcData.SHARE_ALIKE);
+		return CollectionUtil.stringToSet(CcData.SHARE_ALIKE);
 	}
 
 	@Override
 	public Collection<String> getPermissionOfDerivatesUris() {
-		return stringToSet(CcData.DERIVATIVE_WORKS);
+		return CollectionUtil.stringToSet(CcData.DERIVATIVE_WORKS);
 	}
 
 	@Override
 	public String getTitle() {
-		return "CreativeCommonsMatrix";
+		return KnowledgeBases.ID_CC_MATRIX;
 	}
 
 	@Override

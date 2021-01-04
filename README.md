@@ -1,7 +1,10 @@
 # Relicensing Combined Datasets (ReCoDa)
 
-The related article _Relicensing Combined Datasets_ was accepted at the Resource Track of the [15th IEEE International Conference on Semantic Computing (ICSC2021)](https://www.ieee-icsc.org/).
+The related article
+_Relicensing Combined Datasets_
+was accepted at the Resource Track of the [15th IEEE International Conference on Semantic Computing (ICSC2021)](https://www.ieee-icsc.org/).
 It will take place on January 27-29, 2021.
+A draft version is available as ([PDF file](https://papers.dice-research.org/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-public.pdf)).
 
 ## Repository
 
@@ -12,7 +15,12 @@ The following main steps are executed:
 - License [Attribute](src/main/java/org/dice_research/opal/licenses/Attribute.java) values are mapped according to their type.
 - The [Operator](src/main/java/org/dice_research/opal/licenses/Operator.java) computes composite attributes of all input licenses.
 - Finally, the [BackMapping](src/main/java/org/dice_research/opal/licenses/BackMapping.java) creates a list of compatible licenses.
-- To add additional Knowledge Bases, the [AttributeFactory](src/main/java/org/dice_research/opal/licenses/AttributeFactory.java) can be utilized and afterwards the [Execution](src/main/java/org/dice_research/opal/licenses/Execution.java) methods help to run an experiment.
+
+Knowledge Bases (Knowledge Graphs):
+
+- Knowledge Bases are available in the resource directory [knowledge-bases](src/main/resources/knowledge-bases) as turtle/ccREL files.
+- Knowledge Base files can be imported using the [KnowledgeBases](src/main/java/org/dice_research/opal/licenses/KnowledgeBases.java) class.
+- To add additional Knowledge Bases, the [AttributeFactory](./src/main/java/org/dice_research/opal/licenses/AttributeFactory.java) can be utilized and afterwards the [Execution](src/main/java/org/dice_research/opal/licenses/Execution.java) methods help to run an experiment.
 
 ## Download
 

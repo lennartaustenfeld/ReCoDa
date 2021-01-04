@@ -7,8 +7,10 @@ import java.util.List;
 import java.util.Map;
 
 import org.dice_research.opal.licenses.KnowledgeBase;
+import org.dice_research.opal.licenses.KnowledgeBases;
 import org.dice_research.opal.licenses.cc.CcData;
 import org.dice_research.opal.licenses.utils.Cfg;
+import org.dice_research.opal.licenses.utils.CollectionUtil;
 
 /**
  * Configuration: Set CC.LicenseRDF directory using the system property
@@ -26,17 +28,17 @@ public class KbGenCc extends KbGen {
 
 	@Override
 	public Collection<String> getAttribueEqualityUris() {
-		return stringToSet(CcData.SHARE_ALIKE);
+		return CollectionUtil.stringToSet(CcData.SHARE_ALIKE);
 	}
 
 	@Override
 	public Collection<String> getPermissionOfDerivatesUris() {
-		return stringToSet(CcData.DERIVATIVE_WORKS);
+		return CollectionUtil.stringToSet(CcData.DERIVATIVE_WORKS);
 	}
 
 	@Override
 	public String getTitle() {
-		return "CreativeCommons";
+		return KnowledgeBases.ID_CC;
 	}
 
 	@Override

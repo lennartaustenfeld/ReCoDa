@@ -7,7 +7,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.dice_research.opal.licenses.KnowledgeBase;
+import org.dice_research.opal.licenses.KnowledgeBases;
 import org.dice_research.opal.licenses.edplcm.EdpLcmKnowledgeBase;
+import org.dice_research.opal.licenses.utils.CollectionUtil;
 
 /**
  *
@@ -22,17 +24,17 @@ public class KbGenEdp extends KbGen {
 
 	@Override
 	public Collection<String> getAttribueEqualityUris() {
-		return stringToSet(EdpLcmKnowledgeBase.ATTRIBUTE_ID_ALIKE);
+		return CollectionUtil.stringToSet(EdpLcmKnowledgeBase.ATTRIBUTE_ID_ALIKE);
 	}
 
 	@Override
 	public Collection<String> getPermissionOfDerivatesUris() {
-		return stringToSet(EdpLcmKnowledgeBase.ATTRIBUTE_ID_DERIVATES);
+		return CollectionUtil.stringToSet(EdpLcmKnowledgeBase.ATTRIBUTE_ID_DERIVATES);
 	}
 
 	@Override
 	public String getTitle() {
-		return "EuropeanDataPortal-LicenseCompatibilityMatrix";
+		return KnowledgeBases.ID_EDP_LCM;
 	}
 
 	@Override
