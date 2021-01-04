@@ -3,6 +3,7 @@ package org.dice_research.opal.licenses.utils;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.URI;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -140,6 +141,10 @@ public class CcRel {
 
 	public KnowledgeBase importFile(File file, Lang lang) {
 		return importModel(RDFDataMgr.loadModel(file.toURI().toString(), lang));
+	}
+
+	public KnowledgeBase importResource(URI uri, Lang lang) {
+		return importModel(RDFDataMgr.loadModel(uri.toString(), lang));
 	}
 
 	public KnowledgeBase importModel(Model model) {

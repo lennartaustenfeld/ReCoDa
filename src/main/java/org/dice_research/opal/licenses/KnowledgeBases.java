@@ -1,6 +1,8 @@
 package org.dice_research.opal.licenses;
 
 import java.io.File;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import org.apache.jena.riot.Lang;
 import org.dice_research.opal.licenses.utils.CcRel;
@@ -19,6 +21,7 @@ public class KnowledgeBases {
 
 	public static final File KB_DIRECTORY = new File("src/main/resources/knowledge-bases");
 	public static final String KB_FILE_SUFFIX = ".ttl";
+	public static final String KB_SUB_DIRECTORY = "knowledge-bases";
 
 	/**
 	 * Creative Commons licenses
@@ -52,8 +55,14 @@ public class KnowledgeBases {
 
 	private KnowledgeBase importKnowledgeBase(String knowledgeBaseId, String attribueEqualityUri,
 			String permissionOfDerivatesUri) {
+		URI uri;
+		try {
+			uri = getClass().getClassLoader().getResource(KB_SUB_DIRECTORY + "/" + knowledgeBaseId + KB_FILE_SUFFIX)
+					.toURI();
+		} catch (URISyntaxException e) {
+			throw new RuntimeException(e);
+		}
 		return new CcRel(CollectionUtil.stringToSet(attribueEqualityUri),
-				CollectionUtil.stringToSet(permissionOfDerivatesUri))
-						.importFile(new File(KB_DIRECTORY, knowledgeBaseId + KB_FILE_SUFFIX), Lang.TURTLE);
+				CollectionUtil.stringToSet(permissionOfDerivatesUri)).importResource(uri, Lang.TURTLE);
 	}
 }
