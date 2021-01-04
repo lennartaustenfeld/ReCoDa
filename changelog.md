@@ -1,5 +1,9 @@
 # Changelog
 
+**Version 1.0.2**
+
+- Import/Export using resources
+
 **Version 1.0.1**
 
 - Import/Export of Knowledge Bases using the Creative Commons Rights Expression Language
