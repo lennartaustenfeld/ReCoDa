@@ -1,0 +1,3982 @@
+# Relicensing Combined Datasets (ReCoDa)
+# https://github.com/dice-group/ReCoDa/
+# 
+# AttribueEquality:
+# [http://creativecommons.org/ns#ShareAlike]
+# 
+# PermissionOfDerivates:
+# [http://creativecommons.org/ns#DerivativeWorks]
+
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+
+<http://creativecommons.org/licenses/by/2.0/cl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/ie/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/hr/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/cl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/rs/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/3.0/ve/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/au/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/ph/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/pe/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/au/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/3.0/gr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/it/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/sg/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/ar/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/sampling/1.0/br/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "sampling" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/eg/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/vn/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/ug/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/cz/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/1.0/fi/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.1/es/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/kr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/hu/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/1.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/cl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/se/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/co/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/be/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/hr/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/rs/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/de/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/3.0/no/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/hr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/ve/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/es/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/jp/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.1/au/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/gr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/uk/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/za/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/3.0/cn/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/2.0/tw/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/cz/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd-nc/1.0/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nd-nc" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/de/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/sg/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/fr/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/tw/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/ca/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/jp/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/au/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/ch/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd-nc/1.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nd-nc" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/de/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/uk/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/fr/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/no/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/dk/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/cr/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.1/es/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/mt/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/nl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/cn/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/za/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/cn/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/tw/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/ca/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/cl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/hr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/th/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/tw/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/it/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/de/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/ch/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/mx/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/cr/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/igo/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/sa/1.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice ;
+        dct:title    "sa" .
+
+<http://creativecommons.org/licenses/by/2.5/ch/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/mk/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/jp/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/2.1/au/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/us/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/4.0/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/uk/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/it/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/cl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/tw/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/br/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/nl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/pt/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/1.0/fi/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/lu/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/cn/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/ca/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/bg/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/cl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/it/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/2.0/at/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/2.5/my/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/be/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/at/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/fr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/es/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/nd-nc/1.0/fi/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice ;
+        dct:title     "nd-nc" .
+
+<http://creativecommons.org/licenses/by-nc/1.0/il/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ug/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/ch/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/ie/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/it/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/es/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/cr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/ec/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/co/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd-nc/2.0/jp/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nd-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/za/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/ph/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/ca/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/br/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/us/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/in/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/br/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/de/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/pr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/pt/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/cl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/eg/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/at/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/my/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/mx/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/au/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/es/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/3.0/pl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd-nc/1.0/il/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nd-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/hk/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/it/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/tw/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/hr/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/ug/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/sa/2.0/jp/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice ;
+        dct:title    "sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/igo/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/il/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/br/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/pr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/be/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/hr/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/sampling/1.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "sampling" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/au/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/1.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/pe/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/3.0/ee/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/ar/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/it/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/sg/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/mt/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/vn/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/es/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/pl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/si/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/pl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/1.0/fi/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/hr/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/th/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/hu/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/tw/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/cl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/in/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/3.0/igo/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/tw/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/hr/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/pt/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/rs/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/mk/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/il/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/si/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/ve/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/au/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/at/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/ee/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/es/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/gr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/za/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/lu/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/cz/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/bg/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/pl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/za/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/at/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/2.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/de/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/hr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/au/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/th/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/pe/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/at/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/no/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ec/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/ar/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/za/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/dk/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/cn/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/za/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/se/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/tw/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/hu/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/BSD/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice ;
+        dct:title    "BSD" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/lu/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/hr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/3.0/gt/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/ch/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/ro/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/3.0/nz/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/hk/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/at/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/us/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/devnations/2.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:HighIncomeNationUse ;
+        cc:requires   cc:Notice ;
+        dct:title     "devnations" .
+
+<http://creativecommons.org/licenses/by-nc/4.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/ec/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/za/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/cn/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/cl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/de/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/gt/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/vn/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/ro/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/nz/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/ch/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/si/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/ug/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/4.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/dk/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/co/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.0/br/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/hk/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/za/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/br/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/rs/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/cz/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ve/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/publicdomain/>
+        a           cc:License ;
+        cc:permits  cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        dct:title   "publicdomain" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/at/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/my/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/gr/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/sampling+/1.0/de/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Sharing , cc:Reproduction ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "sampling+" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/igo/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/4.0/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/cz/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/tw/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/vn/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/3.0/fr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/br/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/cn/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/1.0/fi/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/nc-sa/1.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice ;
+        dct:title     "nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/tw/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/MIT/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice ;
+        dct:title    "MIT" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/cl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/scotland/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/br/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/no/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/pr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/nc/1.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice ;
+        dct:title     "nc" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/rs/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/ch/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/ve/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/2.0/pl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/mt/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/cn/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/pl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/sampling+/1.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Sharing , cc:Reproduction ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "sampling+" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/tw/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/gr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/co/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/2.5/ca/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/th/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/tw/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/fr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/cz/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/1.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ch/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/nd/1.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice ;
+        dct:title    "nd" .
+
+<http://creativecommons.org/licenses/by/2.5/mx/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd-nc/1.0/fi/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nd-nc" .
+
+<http://creativecommons.org/licenses/by/3.0/it/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/mk/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/il/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/ee/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/no/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/scotland/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/pl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/nl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/nc-sa/1.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice ;
+        dct:title     "nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/lu/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/cn/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/bg/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/3.0/pt/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/pl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/cn/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/ca/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/nd/1.0/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice ;
+        dct:title    "nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/tw/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/br/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/scotland/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/2.1/jp/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/3.0/es/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/ch/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/sa/1.0/fi/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice ;
+        dct:title    "sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/mx/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/it/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/publicdomain/mark/1.0/>
+        a           cc:License ;
+        cc:permits  cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        dct:title   "mark" .
+
+<http://creativecommons.org/licenses/by/3.0/ie/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/at/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/ch/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/2.5/it/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/nc/1.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice ;
+        dct:title     "nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/ec/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/mt/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/br/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/scotland/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/3.0/ph/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/2.5/in/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/tw/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/pt/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/au/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/br/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/my/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/pt/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/3.0/eg/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/sampling+/1.0/tw/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Sharing , cc:Reproduction ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "sampling+" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/mk/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/2.1/jp/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/igo/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/es/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/2.0/kr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/hk/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/es/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/1.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/ie/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/it/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/nd/2.0/jp/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice ;
+        dct:title    "nd" .
+
+<http://creativecommons.org/licenses/by/3.0/hr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/bg/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/br/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/ph/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/pr/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/se/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/in/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/br/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/au/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/pt/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/au/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/eg/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/nc-sa/2.0/jp/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice ;
+        dct:title     "nc-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/pe/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/pl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/vn/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/gt/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/ar/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/ro/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/at/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/3.0/sg/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/nz/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/si/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/kr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/es/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/1.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/se/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/scotland/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/hu/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/hr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/rs/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/il/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/hr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/nc/2.0/jp/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice ;
+        dct:title     "nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/ve/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/gr/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/nc-sampling+/1.0/tw/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "nc-sampling+" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ee/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/au/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/2.1/es/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/pr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/pe/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/za/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/ar/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/sg/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/pl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/3.0/de/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/pl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/br/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/hu/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/2.0/jp/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/2.1/au/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/2.0/uk/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/hr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/no/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/sampling/1.0/tw/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "sampling" .
+
+<http://creativecommons.org/licenses/by-nd/2.1/jp/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.1/es/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/publicdomain/zero/1.0/>
+        a           cc:License ;
+        cc:permits  cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        dct:title   "CC0" .
+
+<http://creativecommons.org/licenses/by-sa/4.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/si/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/2.5/dk/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/1.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/2.0/ca/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/za/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/ee/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/za/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/2.0/fr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/1.0/il/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/de/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/fr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/jp/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.1/au/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/cr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/uk/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/GPL/2.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:SourceCode , cc:Notice ;
+        dct:title    "GPL" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/3.0/us/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/pl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/nl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/dk/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/1.0/nl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/ca/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/cl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/se/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/cn/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/fr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/1.0/il/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/ca/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/gt/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/nd-nc/1.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice ;
+        dct:title     "nd-nc" .
+
+<http://creativecommons.org/licenses/nc-sampling+/1.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "nc-sampling+" .
+
+<http://creativecommons.org/licenses/LGPL/2.1/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:SourceCode , cc:Notice ;
+        dct:title    "LGPL" .
+
+<http://creativecommons.org/licenses/by/2.0/it/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ro/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/ch/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/nz/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/mx/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/it/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/cr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/ug/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/us/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/co/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/2.0/be/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/cl/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/igo/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/sa/1.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice ;
+        dct:title    "sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/pt/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/br/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/my/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.0/es/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.1/jp/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/it/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/es/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/gt/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/ug/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/ie/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/it/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.1/es/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/ro/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/nz/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/3.0/tw/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/cn/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/co/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/be/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/ph/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/br/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.0/au/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/pr/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/in/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/nd-nc/1.0/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice ;
+        dct:title     "nd-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/au/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/scotland/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/pt/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/ch/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/eg/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/es/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.1/au/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/pl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/mt/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/kr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/es/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/1.0/nl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/nd-nc/2.0/jp/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice ;
+        dct:title     "nd-nc" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/fr/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/tw/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/pl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/tw/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/2.0/hr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by/3.0/th/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/ca/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/hr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/br/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/il/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/fr/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/au/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/1.0/il/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/my/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/2.5/mk/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/ee/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/au/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/pe/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/pl/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/ar/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/sg/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/mt/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/lu/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/pl/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/ca/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/2.5/bg/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/hu/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/hr/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/br/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/th/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/at/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/fr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/mx/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/it/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/nd/1.0/fi/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice ;
+        dct:title    "nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/hr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/sampling+/1.0/br/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Sharing , cc:Reproduction ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "sampling+" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/mk/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.1/jp/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by/3.0/ec/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/1.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.1/es/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/2.0/za/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/nc-sa/1.0/fi/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice ;
+        dct:title     "nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/lu/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/pt/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/2.0/de/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/2.0/pl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/bg/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/de/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/be/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/il/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/es/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/at/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/jp/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.1/au/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/4.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/au/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/uk/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ie/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/it/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by/3.0/hk/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/es/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/it/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/nc/1.0/fi/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice ;
+        dct:title     "nc" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/ec/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/za/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/kr/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/dk/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc/2.5/pl/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/ph/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/ca/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/se/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/in/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/au/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-sa/2.0/de/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/za/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/fr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/pt/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/1.0/il/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-nd/3.0/eg/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/gt/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/pt/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nd/1.0/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/au/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/ro/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/nz/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.0/kr/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nd/2.5/es/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/cr/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by/3.0/vn/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/za/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by-sa/3.0/hk/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/licenses/by/2.5/si/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/2.1/jp/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by/1.0/fi/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/es/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/3.0/us/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .

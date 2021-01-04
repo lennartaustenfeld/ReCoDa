@@ -1,0 +1,60 @@
+# Relicensing Combined Datasets (ReCoDa)
+# https://github.com/dice-group/ReCoDa/
+# 
+# AttribueEquality:
+# [http://creativecommons.org/ns#ShareAlike]
+# 
+# PermissionOfDerivates:
+# [http://creativecommons.org/ns#DerivativeWorks]
+
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+
+<http://creativecommons.org/publicdomain/zero/1.0/>
+        a           cc:License ;
+        cc:permits  cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        dct:title   "CC0" .
+
+<http://creativecommons.org/licenses/by-nc/4.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc" .
+
+<http://creativecommons.org/licenses/by-nc-sa/4.0/>
+        a             cc:License ;
+        cc:permits    cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-sa" .
+
+<http://creativecommons.org/licenses/by-sa/4.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:ShareAlike , cc:Notice , cc:Attribution ;
+        dct:title    "by-sa" .
+
+<http://creativecommons.org/publicdomain/mark/1.0/>
+        a           cc:License ;
+        cc:permits  cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        dct:title   "mark" .
+
+<http://creativecommons.org/licenses/by/4.0/>
+        a            cc:License ;
+        cc:permits   cc:DerivativeWorks , cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by" .
+
+<http://creativecommons.org/licenses/by-nc-nd/4.0/>
+        a             cc:License ;
+        cc:permits    cc:Reproduction , cc:Distribution ;
+        cc:prohibits  cc:CommercialUse ;
+        cc:requires   cc:Notice , cc:Attribution ;
+        dct:title     "by-nc-nd" .
+
+<http://creativecommons.org/licenses/by-nd/4.0/>
+        a            cc:License ;
+        cc:permits   cc:Reproduction , cc:Distribution ;
+        cc:requires  cc:Notice , cc:Attribution ;
+        dct:title    "by-nd" .

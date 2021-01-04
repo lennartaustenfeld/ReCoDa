@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -56,12 +59,45 @@ public class CcRel {
 		Model model = this.export(kb);
 
 		if (lang.equals(Lang.TURTLE)) {
-			model.setNsPrefix("cc", CCREL);
+			exportTurtle(kb, file, null, null);
+			return;
 		}
 
 		try {
 			FileOutputStream fos = new FileOutputStream(file);
 			RDFDataMgr.write(fos, model, lang);
+			fos.close();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	public void exportTurtle(KnowledgeBase kb, File file, Map<String, String> prefixes, List<String> commentLines) {
+		Model model = this.export(kb);
+
+		// Prefixes
+		model.setNsPrefix("cc", CCREL);
+		model.setNsPrefix("dct", DCTerms.NS);
+		if (prefixes != null) {
+			for (Entry<String, String> prefix : prefixes.entrySet()) {
+				model.setNsPrefix(prefix.getKey(), prefix.getValue());
+			}
+		}
+
+		try {
+			FileOutputStream fos = new FileOutputStream(file);
+
+			// Comments
+			if (commentLines != null) {
+				for (String line : commentLines) {
+					fos.write("# ".getBytes());
+					fos.write(line.getBytes());
+					fos.write("\n".getBytes());
+				}
+				fos.write("\n".getBytes());
+			}
+
+			RDFDataMgr.write(fos, model, Lang.TURTLE);
 			fos.close();
 		} catch (IOException e) {
 			throw new RuntimeException(e);
