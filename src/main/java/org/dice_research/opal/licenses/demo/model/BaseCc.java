@@ -1,27 +1,27 @@
-package org.dice_research.opal.licenses.demo.bases;
+package org.dice_research.opal.licenses.demo.model;
 
 import org.dice_research.opal.licenses.KnowledgeBase;
 import org.dice_research.opal.licenses.KnowledgeBases;
 
-public class BaseCcLcc extends Base {
+public class BaseCc extends Base {
 
 	private KnowledgeBase knowledgeBase;
 
 	@Override
 	public String getId() {
-		return KnowledgeBases.ID_CC_MATRIX;
+		return KnowledgeBases.ID_CC;
 	}
 
 	@Override
 	public KnowledgeBase getKnowledgeBase() {
 		if (knowledgeBase == null) {
-			knowledgeBase = new KnowledgeBases().importCreativeCommonsMatrix();
+			knowledgeBase = new KnowledgeBases().importCreativeCommons();
 		}
 		return knowledgeBase;
 	}
 
 	@Override
 	public String getTitle() {
-		return "Creative Commons - License Compatibility Chart";
+		return "Creative Commons";
 	}
 }
