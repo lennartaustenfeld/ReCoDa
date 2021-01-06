@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/superhero/bootstrap.min.css">
+
+<title>ReCoDa - Relicensing Combined Datasets</title>
+</head>
+<body>
+	<nav class="navbar navbar-light bg-dark sticky-top">
+		<span class="navbar-brand mb-0 h1"><a class="navbar-brand"
+			href="/">Relicensing Combined Datasets (ReCoDa)</a></span>
+		<ul class="nav">
+			<li class="nav-item"><a class="nav-link active" target="_blank"
+				href="https://www.uni-paderborn.de/person/9101/">contact</a></li>
+		</ul>
+	</nav>
+
+	<div class="container-lg mt-3">
+
+		<h3 th:text="${query}">&nbsp;</h3>
+
+		<div class="table-responsive">
+			<table class="table table-striped table-borderless table-sm">
+				<thead>
+					<tr>
+						<th>License name</th>
+						<th>Nothing</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="license : ${licenses}">
+						<td th:text="${license.getName()}">&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+
+</body>
+</html>

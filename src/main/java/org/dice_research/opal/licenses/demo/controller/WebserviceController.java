@@ -1,8 +1,9 @@
-package org.dice_research.opal.licenses.demo;
+package org.dice_research.opal.licenses.demo.controller;
 
 import java.util.List;
 import java.util.Map;
 
+import org.dice_research.opal.licenses.demo.Webservices;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,13 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WebserviceController {
 
-	private ReCoDaDemo reCoDaDemo = new ReCoDaDemo();
-
-	@CrossOrigin
-	@GetMapping("/")
-	String root() {
-		return "ReCoDa - https://github.com/dice-group/ReCoDa";
-	}
+	private Webservices reCoDaDemo = new Webservices();
 
 	@CrossOrigin
 	@GetMapping("/knowledge-bases")

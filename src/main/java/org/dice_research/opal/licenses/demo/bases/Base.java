@@ -1,4 +1,4 @@
-package org.dice_research.opal.licenses.demo;
+package org.dice_research.opal.licenses.demo.bases;
 
 import java.util.Map;
 import java.util.TreeMap;

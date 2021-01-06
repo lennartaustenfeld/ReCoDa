@@ -12,36 +12,33 @@ import org.dice_research.opal.licenses.BackMapping;
 import org.dice_research.opal.licenses.Execution;
 import org.dice_research.opal.licenses.KnowledgeBase;
 import org.dice_research.opal.licenses.License;
+import org.dice_research.opal.licenses.demo.bases.Base;
+import org.dice_research.opal.licenses.demo.bases.Bases;
 
-public class ReCoDaDemo {
-
-	private Map<String, Base> bases;
+public class Webservices {
 
 	public Map<String, String> getKnowledgeBases() {
-		initialize();
 		Map<String, String> map = new TreeMap<>();
-		for (Entry<String, Base> entry : bases.entrySet()) {
+		for (Entry<String, Base> entry : Bases.getInstance().getMap().entrySet()) {
 			map.put(entry.getKey(), entry.getValue().getTitle());
 		}
 		return map;
 	}
 
 	public Map<String, String> getLicenses(String knowledgeBase) {
-		initialize();
-		if (bases.containsKey(knowledgeBase)) {
-			return bases.get(knowledgeBase).getLicenseUrisToNames();
+		if (Bases.getInstance().getMap().containsKey(knowledgeBase)) {
+			return Bases.getInstance().getMap().get(knowledgeBase).getLicenseUrisToNames();
 		} else {
 			return new TreeMap<>();
 		}
 	}
 
 	public Map<String, String> getCompatibleLiceses(String knowledgeBase, List<String> licenses) {
-		initialize();
 		Map<String, String> map = new TreeMap<>();
-		if (bases.containsKey(knowledgeBase)) {
+		if (Bases.getInstance().getMap().containsKey(knowledgeBase)) {
 
 			// Set KnowledgeBase
-			KnowledgeBase kb = bases.get(knowledgeBase).getKnowledgeBase();
+			KnowledgeBase kb = Bases.getInstance().getMap().get(knowledgeBase).getKnowledgeBase();
 			Execution execution = new Execution().setKnowledgeBase(kb);
 
 			// Create list of input-licenses
@@ -66,19 +63,6 @@ public class ReCoDaDemo {
 			}
 		}
 		return map;
-	}
-
-	private void initialize() {
-		if (bases == null) {
-			bases = new TreeMap<>();
-			initializeBase(new BaseCc());
-			initializeBase(new BaseCcLcc());
-			initializeBase(new BaseEdpLcm());
-		}
-	}
-
-	private void initializeBase(Base base) {
-		bases.put(base.getId(), base);
 	}
 
 }

@@ -1,27 +1,27 @@
-package org.dice_research.opal.licenses.demo;
+package org.dice_research.opal.licenses.demo.bases;
 
 import org.dice_research.opal.licenses.KnowledgeBase;
 import org.dice_research.opal.licenses.KnowledgeBases;
 
-public class BaseEdpLcm extends Base {
+public class BaseCc extends Base {
 
 	private KnowledgeBase knowledgeBase;
 
 	@Override
 	public String getId() {
-		return KnowledgeBases.ID_EDP_LCM;
+		return KnowledgeBases.ID_CC;
 	}
 
 	@Override
 	public KnowledgeBase getKnowledgeBase() {
 		if (knowledgeBase == null) {
-			knowledgeBase = new KnowledgeBases().importEDP_Matrix();
+			knowledgeBase = new KnowledgeBases().importCreativeCommons();
 		}
 		return knowledgeBase;
 	}
 
 	@Override
 	public String getTitle() {
-		return "European Data Portal - License Compatibility Matrix";
+		return "Creative Commons";
 	}
 }
