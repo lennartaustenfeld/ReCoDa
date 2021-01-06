@@ -29,7 +29,7 @@ public class BaseContainer {
 		return base.getTitle();
 	}
 
-	public List<LicenseContainer> getLicenseContainers() {
+	public List<LicenseContainer> getLicenseContainersByName() {
 		List<LicenseContainer> list = new LinkedList<>();
 		for (License license : getKnowledgeBase().getLicenses()) {
 			list.add(new LicenseContainer(license));

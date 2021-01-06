@@ -5,7 +5,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-import org.dice_research.opal.licenses.KnowledgeBase;
 import org.dice_research.opal.licenses.License;
 import org.dice_research.opal.licenses.demo.ReCoDa;
 import org.dice_research.opal.licenses.demo.model.Base;
@@ -19,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebserviceController {
 
 	@CrossOrigin
-	@GetMapping("/knowledge-bases")
+	@GetMapping("/webservice/knowledge-bases")
 	Map<String, String> knowledgeBases() {
 		Map<String, String> map = new TreeMap<>();
 		for (Entry<String, Base> entry : Bases.INSTANCE.getMap().entrySet()) {
@@ -29,8 +28,8 @@ public class WebserviceController {
 	}
 
 	@CrossOrigin
-	@GetMapping("/licenses")
-	Map<String, String> licenses(String knowledgeBase) {
+	@GetMapping("/webservice/licenses")
+	Map<String, String> licenses(@RequestParam(name = "knowledge-base", required = true) String knowledgeBase) {
 		if (Bases.INSTANCE.getMap().containsKey(knowledgeBase)) {
 			return Bases.INSTANCE.getMap().get(knowledgeBase).getLicenseUrisToNames();
 		} else {
@@ -39,14 +38,14 @@ public class WebserviceController {
 	}
 
 	@CrossOrigin
-	@GetMapping("/compatible-licenses")
-	Map<String, String> compatibleLicenses(@RequestParam("knowledgeBase") String knowledgeBase,
-			@RequestParam("licenses") List<String> licenses) {
+	@GetMapping("/webservice/compatible-licenses")
+	Map<String, String> compatibleLicenses(@RequestParam(name = "knowledge-base", required = true) String knowledgeBase,
+			@RequestParam(name = "input-licenses", required = true) List<String> inputLicenses) {
 		Map<String, String> map = new TreeMap<>();
 		if (Bases.INSTANCE.getMap().containsKey(knowledgeBase)) {
-			KnowledgeBase kBase = Bases.INSTANCE.getMap().get(knowledgeBase).getKnowledgeBase();
-			for (License compatibleLicense : new ReCoDa().setKnowledgeBase(kBase).setInputLicenses(licenses).execute()
-					.getCompatibleLicenses()) {
+			for (License compatibleLicense : new ReCoDa()
+					.setKnowledgeBase(Bases.INSTANCE.getMap().get(knowledgeBase).getKnowledgeBase())
+					.setInputLicenses(inputLicenses).execute().getCompatibleLicenses()) {
 				map.put(compatibleLicense.getUri(), compatibleLicense.getName());
 			}
 		}
