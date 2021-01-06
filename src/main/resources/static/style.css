@@ -1,0 +1,16 @@
+.recoda-derivates {
+ background: #18BC9C; /* green Meta-Permission */
+}
+.recoda-equality {
+ background: #3498DB; /* blue Meta-Requirement */
+}
+
+.recoda-permission {
+ background: #69D3BE; /* light green */
+}
+.recoda-prohibition {
+ background: #EF8A80; /* light red  */
+}
+.recoda-requirement {
+ background: #7BBCE7; /* light blue */
+}

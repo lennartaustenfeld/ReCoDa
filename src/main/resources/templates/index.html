@@ -1,33 +1,17 @@
 <!doctype html>
 <html lang="en">
-<head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/superhero/bootstrap.min.css">
-
-<title>ReCoDa - Relicensing Combined Datasets</title>
-</head>
+<head th:replace="fragments/template.html :: head">
 <body>
-	<nav class="navbar navbar-light bg-dark sticky-top">
-		<span class="navbar-brand mb-0 h1"><a class="navbar-brand"
-			href="/">Relicensing Combined Datasets (ReCoDa)</a></span>
-		<ul class="nav">
-			<li class="nav-item"><a class="nav-link active" target="_blank"
-				href="https://www.uni-paderborn.de/person/9101/">contact</a></li>
-		</ul>
-	</nav>
 
+	<nav th:replace="fragments/template.html :: nav"></nav>
 
 	<div class="container-lg mt-3">
 
-		<h1>Demo examples</h1>
+		<h3>Demo examples</h3>
 
 		<ul>
+			<li><a href="/demo/list"> <strong>list</strong>
+			</a></li>
 			<li><a
 				href="/demo/combine?knowledge-base=CreativeCommons-LicenseCompatibilityChart">
 					<strong>combine</strong><br />
@@ -36,7 +20,7 @@
 		</ul>
 
 
-		<h1>Webservice examples</h1>
+		<h3>Webservice examples</h3>
 
 		<ul>
 			<li><a href="/webservice/knowledge-bases"><strong>knowledge-bases</strong></a></li>
