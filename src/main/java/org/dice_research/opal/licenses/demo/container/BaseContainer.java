@@ -12,7 +12,7 @@ import org.dice_research.opal.licenses.KnowledgeBase;
 import org.dice_research.opal.licenses.License;
 import org.dice_research.opal.licenses.demo.model.Base;
 
-public class BaseContainer {
+public class BaseContainer implements Comparable<BaseContainer> {
 
 	public Base base;
 
@@ -36,12 +36,12 @@ public class BaseContainer {
 		return base.getKnowledgeBase().getUrisToLicenses().size();
 	}
 
-	public List<AttributeContainer> getAttributeContainers() {
-		List<AttributeContainer> list = new LinkedList<>();
+	public SortedSet<AttributeContainer> getAttributeContainers() {
+		SortedSet<AttributeContainer> set = new TreeSet<>();
 		for (Attribute attribute : base.getKnowledgeBase().getSortedAttributes().getList()) {
-			list.add(new AttributeContainer(attribute));
+			set.add(new AttributeContainer(attribute));
 		}
-		return list;
+		return set;
 	}
 
 	public int getNumberOfAttributes() {
@@ -74,10 +74,20 @@ public class BaseContainer {
 
 			@Override
 			public int compare(LicenseContainer o1, LicenseContainer o2) {
-				return o1.license.getName().compareToIgnoreCase(o2.license.getName());
+				return o1.getName().compareToIgnoreCase(o2.getName());
 			}
 		});
 		return list;
+	}
+
+	@Override
+	public int compareTo(BaseContainer o) {
+		int size = Integer.compare(this.getNumberOfLicenses(), o.getNumberOfLicenses());
+		if (size != 0) {
+			return size;
+		} else {
+			return this.getTitle().compareTo(o.getTitle());
+		}
 	}
 
 }

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head th:replace="fragments/template.html :: head">
+<body>
+
+	<nav th:replace="fragments/template.html :: nav"></nav>
+
+	<div class="container-lg mt-3">
+
+		<h3>Webservices</h3>
+
+		<div class="table-responsive">
+
+
+			<table class="table table-striped table-borderless">
+				<thead>
+					<tr>
+						<th scope="col">Method</th>
+						<th scope="col">Description</th>
+						<th scope="col">Parameters</th>
+						<th scope="col">Example</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">knowledge-bases</th>
+						<td>Lists IDs and names of Knowledge Bases.</td>
+						<td>-</td>
+						<td><a target="_blank" href="/webservice/knowledge-bases"><strong>knowledge-bases</strong></a></td>
+					</tr>
+					<tr>
+						<th scope="row">licenses</th>
+						<td>Lists URIs and names of licenses<br />for selected
+							Knowledge Base.
+						</td>
+						<td>knowledge-base</td>
+						<td style="word-break: break-word; overflow-wrap: break-word"><a
+							target="_blank"
+							href="/webservice/licenses?knowledge-base=CreativeCommons-LicenseCompatibilityChart">
+								<strong>licenses</strong><br /> ?knowledge-base=<br />CreativeCommons-LicenseCompatibilityChart
+						</a></td>
+					</tr>
+					<tr>
+						<th scope="row">compatible-licenses</th>
+						<td>Lists URIs and names of compatible licenses<br />for
+							selected Knowledge Base and selected input licenses.
+						</td>
+						<td>knowledge-base<br />input-licenses
+						</td>
+						<td style="word-break: break-word; overflow-wrap: break-word"><a
+							target="_blank"
+							href="/webservice/compatible-licenses?knowledge-base=CreativeCommons-LicenseCompatibilityChart&input-licenses=http://creativecommons.org/publicdomain/zero/1.0/,http://creativecommons.org/publicdomain/mark/1.0/">
+								<strong>compatible-licenses</strong><br /> ?knowledge-base=<br />CreativeCommons-LicenseCompatibilityChart<br />
+								&input-licenses=<br />http://creativecommons.org/publicdomain/zero/1.0/,<br />
+								http://creativecommons.org/publicdomain/mark/1.0/
+						</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,16 +1,28 @@
-.recoda-derivates {
- background: #18BC9C; /* green Meta-Permission */
+.combine .recoda-attribute {
+	font-size: .63em;
 }
+
+.recoda-disabled {
+	background: #e7e7e7;
+	color: #bbbbbb;
+}
+
+.recoda-derivates {
+	background: #18BC9C; /* green Meta-Permission */
+}
+
 .recoda-equality {
- background: #3498DB; /* blue Meta-Requirement */
+	background: #3498DB; /* blue Meta-Requirement */
 }
 
 .recoda-permission {
- background: #69D3BE; /* light green */
+	background: #69D3BE; /* light green */
 }
+
 .recoda-prohibition {
- background: #EF8A80; /* light red  */
+	background: #EF8A80; /* light red  */
 }
+
 .recoda-requirement {
- background: #7BBCE7; /* light blue */
+	background: #7BBCE7; /* light blue */
 }
