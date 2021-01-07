@@ -7,7 +7,8 @@
 	<groupId>org.dice_research.opal</groupId>
 	<artifactId>recoda-demo</artifactId>
 
-	<version>0.0.1-SNAPSHOT</version>
+	<!-- Version is based on the current ReCoDa release -->
+	<version>1.0.2</version>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -72,12 +73,12 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework.boot</groupId> -->
-		<!-- <artifactId>spring-boot-devtools</artifactId> -->
-		<!-- <version>${spring.version}</version> -->
-		<!-- <optional>true</optional> -->
-		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<version>${spring.version}</version>
+			<optional>true</optional>
+		</dependency>
 
 	</dependencies>
 
@@ -97,7 +98,27 @@
 			<url>https://repo1.maven.org/maven2/</url>
 		</repository>
 
-
 	</repositories>
+
+	<!-- https://docs.spring.io/spring-boot/docs/1.2.7.RELEASE/reference/html/howto-build.html -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${spring.version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<classifier>exec</classifier>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
