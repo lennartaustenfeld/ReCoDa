@@ -25,7 +25,7 @@ A demo of [Relicensing Combined Datasets](https://github.com/dice-group/ReCoDa).
 - [Download the dockerfile](https://raw.githubusercontent.com/dice-group/ReCoDa/demo/Dockerfile)
 - Run: `sudo docker build -t recoda-demo ./`
 - Run: `sudo docker run -t -d -p 80:8443 --name recoda-demo recoda-demo`
-- Open [http://localhost:8443/](http://localhost:80/)
+- Open [http://localhost:80/](http://localhost:80/)
 
 
 ## Credits
