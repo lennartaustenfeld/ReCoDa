@@ -1,6 +1,8 @@
-# Relicensing Combined Datasets (ReCoDa) Demo
+# ReCoDa Demo
 
-Available webservice URIs are listed in [WebserviceController.java](src/main/java/org/dice_research/opal/licenses/demo/WebserviceController.java).
+A demo of [Relicensing Combined Datasets](https://github.com/dice-group/ReCoDa).
+
+![ReCoDa](doc/ReCoDa-Screenshot.png)
 
 ## Credits
 
