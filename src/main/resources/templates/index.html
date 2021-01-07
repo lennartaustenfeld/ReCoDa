@@ -7,27 +7,64 @@
 
 	<div class="container-lg mt-3">
 
-		<h3>Relicensing Combined Datasets</h3>
+		<h3>Relicensing Combined Datasets (ReCoDa)</h3>
+
+		<h4 class="mt-4">Problem: Combination of datasets with different
+			licensing</h4>
+
+		<p>
+			With the increasing spread of Open Data and metadata portals (e.g. <a
+				target="_blank" href="https://dice-research.org/OPAL">OPAL</a>),
+			open datasets are available for use and combination. Since datasets
+			can be licensed under different conditions, the combination of
+			datasets and the selection of an appropriate license for
+			republication can become complicated. Various approaches have emerged
+			that allow, for example, a pairwise comparison of licenses. Although
+			the approaches are helpful, in many cases they do not support the
+			comparison of a combination of multiple licenses.
+		</p>
 
 		<div class="text-center">
 			<img src="/Creative-Commons-License-Compatibility-Chart.png"
-				class="img-fluid" alt="Creative Commons License Compatibility Chart">
-			<br />Image source: <a target="_blank"
-				href="https://wiki.creativecommons.org/index.php?title=Wiki/cc_license_compatibility&oldid=70058">wiki.creativecommons.org</a>
+				class="img-fluid" alt="Creative Commons License Compatibility Chart"
+				width="757"> <br />Creative Commons License Compatibility
+			Chart (<a target="_blank"
+				href="https://wiki.creativecommons.org/index.php?title=Wiki/cc_license_compatibility&oldid=70058">source</a>)
 		</div>
+
+		<h4 class="mt-4">Solution: Comparison of license attributes</h4>
+
+		<p>Licenses can be specified by their attributes. Attributes types
+			are, for instance, permissions, requirements or prohibitions. ReCoDa
+			selects the most restrictive license attributes and compares the
+			result with other licenses. This allows to compute compatible
+			licenses for republishing and relicensing combined datasets.</p>
 
 		<div class="text-center">
 			<img src="/ReCoDa-License-Attributes.png" class="img-fluid"
-				alt="ReCoDa License Attributes">
+				alt="ReCoDa License Attributes" width="757">
 		</div>
 
 		<div class="text-center">
 			<img src="/ReCoDa-Compatible-Licenses.png" class="img-fluid"
-				alt="ReCoDa Compatible Licenses">
+				alt="ReCoDa Compatible Licenses" width="757">
 		</div>
 
+		<h4 class="mt-4">Try the demo</h4>
+
+		<p>The ReCoDa demo consits of 3 steps. First, a knowledge base has
+			to be selected. Knowledge bases contain licenses specified by the
+			same attributes. In the second step, licenses to combine have to be
+			chosen. Finally, you can select one of the computed compatible
+			licenses.</p>
+
+		<div class="text-center mb-5">
+			<a class="btn btn-success" href="/demo/knowledge-bases" role="button">Get
+				compatible licenses</a>
+		</div>
 
 	</div>
 
+	<div th:replace="fragments/template.html :: footer"></div>
 </body>
 </html>
