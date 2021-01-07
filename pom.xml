@@ -76,7 +76,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<version>${spring.version}</version>
-			<optional>true</optional>
 		</dependency>
 
 	</dependencies>
@@ -96,8 +95,8 @@
 			<id>central</id>
 			<url>https://repo1.maven.org/maven2/</url>
 		</repository>
-		
-		
+
+
 	</repositories>
 
 </project>
