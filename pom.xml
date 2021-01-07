@@ -92,6 +92,12 @@
 			<name>AKSW Snapshot Repository</name>
 			<url>http://maven.aksw.org/archiva/repository/snapshots</url>
 		</repository>
+		<repository>
+			<id>central</id>
+			<url>https://repo1.maven.org/maven2/</url>
+		</repository>
+		
+		
 	</repositories>
 
 </project>

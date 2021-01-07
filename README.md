@@ -4,6 +4,14 @@ A demo of [Relicensing Combined Datasets](https://github.com/dice-group/ReCoDa).
 
 ![ReCoDa](doc/ReCoDa-Screenshot.png)
 
+
+## How to run
+
+- [Download the code](https://github.com/dice-group/ReCoDa/archive/demo.zip)
+- Run: `mvn org.springframework.boot:spring-boot-maven-plugin:run`
+- Open [http://localhost:8443/](http://localhost:8443/)
+
+
 ## Credits
 
 [Data Science Group (DICE)](https://dice-research.org/) at [Paderborn University](https://www.uni-paderborn.de/)
