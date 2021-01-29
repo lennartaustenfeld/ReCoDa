@@ -1,12 +1,11 @@
 # Relicensing Combined Datasets (ReCoDa)
 
-The related **article**
-_Relicensing Combined Datasets_
-was accepted at the Resource Track of the [15th IEEE International Conference on Semantic Computing (ICSC2021)](https://www.ieee-icsc.org/).
-It will take place on January 27-29, 2021.
-A draft version is available as [PDF file](https://papers.dice-research.org/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-public.pdf).  
-The **presentation slides** can be downloaded as [PDF file](https://papers.dice-research.org/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-slides-public.pdf).  
-The **demo code** is available at [branch demo](https://github.com/dice-group/ReCoDa/tree/demo).
+- The **article** _Relicensing Combined Datasets_ was presented at the [15th IEEE International Conference on Semantic Computing (ICSC 2021)](https://www.ieee-icsc.org/) resource track.
+A draft version is available as [PDF file](https://papers.dice-research.org/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-public.pdf).
+Look up the article at [Google Scholar](https://scholar.google.com/scholar?q=Relicensing+Combined+Datasets).
+- The **presentation slides** can be downloaded as [PDF file](https://papers.dice-research.org/2021/ICSC2021_ReCoDa/Relicensing-Combined-Datasets-ReCoDa-slides-public.pdf).
+- The **demo** can be accessed at [dice-research.org/ReCoDa](https://dice-research.org/ReCoDa).
+- The **code of the demo** is available at [branch demo](https://github.com/dice-group/ReCoDa/tree/demo).
 
 
 ## Repository
